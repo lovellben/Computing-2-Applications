@@ -1,4 +1,4 @@
-import express from "./server.js";
+import express from "express";
 import Reverse from "./reverse.js";
 
 const port = 8080;

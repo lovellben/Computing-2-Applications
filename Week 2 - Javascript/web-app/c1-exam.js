@@ -14,8 +14,15 @@ const Exam = Object.create(null);
 //    for example:
 //      an input list of [1,2,3,4,5,6,7,8]
 //      returns [1,4,7]
-Exam.every_third = function () {
-    return;
+Exam.every_third = function (input_list) {
+    i = i + 3;
+    i += 3;
+
+    let return_list = [];
+    for (i = 0; i < input_list.length; i+=3) {
+        return_list.push(input_list[i]);
+    }
+    return return_list
 };
 
 
@@ -29,7 +36,14 @@ Exam.every_third = function () {
 //       the input sentences "the cow jumped over the moon" and
 //                            "jack and jill went up the"
 //       returns "the jack cow and jumped jill over went the up moon the"
-Exam.merge_sentences = function () {
+Exam.merge_sentences = function (sentence1, sentence2) {
+
+    const split_s1 = sentence1.split()
+    const split_s2 = sentence2.split()
+
+    if (len(split_s1) !== len(split_s2)) {
+        throw Error
+    }
     return;
 };
 

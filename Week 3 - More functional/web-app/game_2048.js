@@ -9,7 +9,11 @@ const game_2048 = Object.create(null);
 // The identity function returns whatever it is passed. i.e does nothing.
 const identity = (x) => x;
 
-game_2048.left = identity;// this is a placeholder for a correct implementation
+const pad_zeros = (row) => row.concat(new Array )
+
+const row_left = (row) => pad_zeros(combine_tiles(strip_zeros()));
+
+game_2048.left = (board) => board.map(row_left);// this is a placeholder for a correct implementation
 
 const row_flip = (row) => row.slice().reverse();
 const h_flip = (board) => board.map(row_flip);

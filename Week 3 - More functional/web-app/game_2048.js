@@ -9,7 +9,7 @@ const game_2048 = Object.create(null);
 // The identity function returns whatever it is passed. i.e does nothing.
 const identity = (x) => x;
 
-const pad_zeros = (row) => row.concat(new Array )
+const pad_zeros = (row) => row.concat(new Array);
 
 const row_left = (row) => pad_zeros(combine_tiles(strip_zeros()));
 

@@ -47,8 +47,11 @@ Exam.merge_sentences = function (sentence1, sentence2) {
 //     for example:
 //          the input "sPonGe bOb"
 //          returns 6
-Exam.lowercase_count = function () {
-    return;
+Exam.lowercase_count = function (string) {
+
+    const letters = string.split("");
+
+    return letters.filter((l) => l !== l.toUpperCase()).length;
 };
 
 

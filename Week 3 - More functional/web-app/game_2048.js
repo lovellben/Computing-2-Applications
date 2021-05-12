@@ -65,19 +65,15 @@ const game_2048 = Object.create(null);
 // The identity function returns whatever it is passed. i.e does nothing.
 const identity = (x) => x;
 
-<<<<<<< HEAD
-const pad_zeros = (row) => row.concat(new Array);
+const pad_zeros = (row) => row.concat(Array);
 
 const row_left = (row) => pad_zeros(combine_tiles(strip_zeros()));
 
-game_2048.left = (board) => board.map(row_left);// this is a placeholder for a correct implementation
+game_2048.left = (board) => board.map(row_left);
 
 const row_flip = (row) => row.slice().reverse();
 const h_flip = (board) => board.map(row_flip);
-=======
-const row_flip = (row) => row.slice().reverse();
 
-const h_flip = (board) => board.map(row_flip);
 
 const strip_zeros = (row) => row.filter((x) => x !== 0);
 
@@ -123,7 +119,6 @@ const pad_zeros = (row) => row.concat([0, 0, 0, 0]).slice(0, 4);
 const row_left = (row) => pad_zeros(combine_tiles(strip_zeros(row)));
 
 game_2048.left = (board) => board.map(row_left);
->>>>>>> f171575afe711dcd793838ceb36d4d7914412a70
 
 game_2048.right = (board) => h_flip(game_2048.left(h_flip(board)));
 
